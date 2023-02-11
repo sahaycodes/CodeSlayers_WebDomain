@@ -1,41 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src ="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | By Code Slayers</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
-<body style="text-align:center; font-family:Arial , serif; font-size:14pt">
-<script type="text/javascript">
-    $(document).ready(function(){
-        var socket = io.connect("http://localhost:5000")
-        socket.on('connect',function() {
-            socket.send("User connected!");
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="#">WorkCon</a>
+      <div class="search_box">
+        <input type="text" placeholder="Search WorkCon">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
 
-        });
-        
-        socket.on('message',function(data){
-            $('#messages').append($('<p>').text(data));
+    <div class="header-icons">
+      <i class="fas fa-bell"></i>
+      <div class="account">
+        <img src="./pic/img.jpg" alt="">
+        <h4>Admin Kun</h4>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <nav>
+      <div class="side_navbar">
+        <span>Main Menu</span>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Admin Profile</a>
+        <a href="#">Client History</a>
+        <a href="#">Applications</a>
+        <a href="#">Worker Account</a>
+        <a href="#">Documents</a>
 
-        });
+        <div class="links">
+          <span>Quick Link</span>
+          <a href="#">Paypal</a>
+          <a href="#">GooglePay</a>
+          <a href="#">Phonepe</a>
+        </div>
+      </div>
+    </nav>
 
-        $('#sendBtn').on('click', function (){
-            socket.send($('#username').val()+':'+$('#message').val());
-            $('#message').val('');
-        });
+    <div class="main-body">
+      <h2>Dashboard</h2>
+      <div class="promo_card">
+        <h1>Welcome to </h1>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <button>Learn More</button>
+      </div>
 
-    })
-</script>   
-<div id ="messages" style ="margin:0 auto";width:60%; test-align:left;min-height:300px">
+      <div class="history_lists">
+        <div class="list1">
+          <div class="row">
+            <h4>Client History</h4>
+            <a href="#">See all</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Dates</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Ammount</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2, Aug, 2022</td>
+                <td>Random1</td>
+                <td>Cleaning</td>
+                <td>Rs.2000.00</td>
+                
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>29, July, 2022</td>
+                
+                <td>Random2</td>
+                <td>Repair</td>
+                <td>Rs.5,000.00</td>
+                
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>15, July, 2022</td>
+              
+                <td>Random Julie1</td>
+                <td>Plumbing</td>
+                <td>Rs.3000.00</td>
+                
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5, July, 2022</td>
+                <td>Random Jhon1</td>
+                <td>Cleaning</td>
+                <td>Rs.7000.00</td>
+                
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>29, June, 2022</td>
+                <td>Random Julie2</td>
+                <td>Beautician</td>
+                <td>Rs.4000.00</td>
+                
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>28, June, 2022</td>
+                <td>Random Jhon2</td>
+                <td>Repair</td>
+                <td>Rs.2000.00</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
+        <div class="list2">
+          <div class="row">
+            <h4>Documents</h4>
+            <a href="#">Upload</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Uplaoded</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>AADHAR</td>
+                <td>PDF</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>RATION</td>
+                <td>PDF</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Licence</td>
+                <td>PDF</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>PAN</td>
+                <td>Jpg</td>
+                <td>22</td>
+              </tr> 
+              <tr>
+                <td>5</td>
+                <td>Licence</td>
+                <td>Jpg</td>
+                <td>22</td>
+              </tr> 
+              <tr>
+                <td>6</td>
+                <td>VOTER-ID</td>
+                <td>Word</td>
+                <td>22</td>
+              </tr> 
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
-</div>
-<input type="text" id="username" placeholder ="Username"required>
-<input type="text" id="message" placeholder="Message"required >
-<button id="sendBtn">Send</button> 
-    
+    <div class="sidebar">
+      <h4>Account Balance</h4>
+      
+      <div class="balance">
+        <i class="fa-solid fa-indian-rupee-sign icon"></i>
+        <div class="info">
+          <h5>INR</h5>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i>25,000.00</span>
+        </div>
+      </div>
+      
+      <div class="balance">
+        <i class="fa-solid fa-indian-rupee-sign icon"></i>
+        <div class="info">
+          <h5>INR</h5>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i>30,000.00</span>
+        </div>
+      </div>
+
+      <div class="balance">
+        <i class="fa-solid fa-indian-rupee-sign icon"></i>
+        <div class="info">
+          <h5>INR</h5>
+          <span><i class="fa-soid fa-indian-rupee-sign"></i>5,000.00</span>
+        </div>
+      </div>
+
+      <div class="balance">
+        <i class="fa-solid fa-indian-rupee-sign icon"></i>
+        <div class="info">
+          <h5>INR</h5>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i>220,000.00</span>
+        </div>
+      </div>
+
+      <div class="balance">
+        <i class="fa-solid fa-indian-rupee-sign icon"></i>
+        <div class="info">
+          <h5>INR</h5>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i>30,000.00</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
