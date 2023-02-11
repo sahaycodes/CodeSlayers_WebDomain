@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <meta charset="UTF-8">
+    <title>workers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./workers.css">
+    
+  </head>
+  <body>
+    <h1>Worker Profile</h1>
+    
+    <form>
+<div class="pic">
+    <input type="image" src="pfp.png" alt="Submit" width="155" height="155">
+    <input type="file" accept="image/*" capture="camera">
+</div>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      
+      <label for="tel">Telephone:</label>
+      <input type="tel" id="tel" name="tel">
+      
+      <label for="expertise">Expertise:</label>
+      <select id="expertise" name="expertise">
+        <option value="">Select</option>
+        <option value="repair">Repair</option>
+        <option value="installation">Installation</option>
+        <option value="cleaning">Cleaning</option>
+      </select>
+      
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price">
+      
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+    

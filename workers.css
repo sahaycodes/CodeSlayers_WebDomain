@@ -1,0 +1,74 @@
+
+body {
+  font-family: Arial, sans-serif;
+  /* color: #6258db; */
+  background-color: #6258db;
+}
+
+.pic{
+  border-radius: 120px;
+  padding: 2px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+  width: 97.5%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea :hover {
+    border-color: #6258db;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #c5c1f7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #6258db;
+}
+
+.map-container {
+  width: 80%;
+  margin: 20px auto;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
