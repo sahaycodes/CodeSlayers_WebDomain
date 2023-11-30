@@ -30,9 +30,27 @@
 - The workers will have to provide an ID proof as softcopy for verification purposes.
 
 
+
 ## :compass: Roadmap
 
 * [ ] The project is under development phase to revamp its frontend and adding in more features
+
+## :compass: Screenshots
+
+![image](https://github.com/sahaycodes/CodeSlayers_WebDomain_Rookies/assets/99585576/e8ca0c48-a4dc-4e03-9ac5-ab0b0efc4f70)
+
+![image](https://github.com/sahaycodes/CodeSlayers_WebDomain_Rookies/assets/99585576/f126b86f-cd9d-4208-a9e8-b4a3c07a6858)
+
+![image](https://github.com/sahaycodes/CodeSlayers_WebDomain_Rookies/assets/99585576/da06588c-2466-42cf-a2fe-732f95928189)
+
+![image](https://github.com/sahaycodes/CodeSlayers_WebDomain_Rookies/assets/99585576/a6b944d5-ee8a-46f9-8e83-41fce6c9a24a)
+
+![Screenshot 2023-11-30 162757](https://github.com/sahaycodes/CodeSlayers_WebDomain_Rookies/assets/99585576/949483cf-ced2-47a6-9d65-1e95f13ea52b)
+
+
+
+
+
 
 
 ## :wave: Contributing
